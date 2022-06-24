@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
+    <!--    <link rel="stylesheet" href="my_style.css">-->
+
+    <style>
+           body {
+      padding: 1%;
+	  max-width: 900px;
+	  margin: 0 auto;
+	  float: none !important;
+      font-family: arial, helvetica, sans-serif;
+      font-size: 18px;
+      min-height: 100%;
+      color: rgb(50, 50, 50);  /* very dark grey */
+      /*background-color: red;*/
+   }
+
+html {
+    height: 100%;
+}
+
+
+   h1 {
+      font-size: 24px;
+      font-weight:normal;
+   }
+
+   h2 {
+      font-size: 22px;
+   }
+
+   .header {
+      padding:2%;
+      text-align: center;
+      /*background-color: rgb(230,230,230);*/
+   }
+
+
+   /* stuff for links */
+   a {
+      text-decoration: none;
+   }
+
+   /* navigation tabs */
+   a.nav {
+      color: grey
+   }
+
+   .nav:hover {
+      color: rgb(50, 50, 50)
+   }
+
+   /* other links */
+   a.other_links {
+      color: rgb(0,112,153)
+   }
+
+   a.black_links {
+      color: rgb(50,50,50)
+   }
+
+
+   .other_links:hover {
+      text-decoration: underline;
+   }
+   
+   .black_links:hover {
+      text-decoration: underline;
+   }
+
+
+   .nav_table {
+      margin-left: auto;
+      margin-right: auto;
+      border-spacing: 10px 0;
+   }
+
+   .cv_table {
+      border-spacing: 20px 20px;
+   }
+
+   .cv_table td {
+      vertical-align: top;
+   }
+
+   td.year {
+    width: 12%;
+   }
+
+   .cv_inner_table td {
+      vertical-align: top;
+   }
+
+   .cv_inner_table {
+      border-spacing: 10px 10px;
+   }
+
+   .cv_small_table td {
+      vertical-align: top;
+   }
+
+   .cv_small_table {
+      border-spacing: 10px 10px;
+   }
+
+   .home_table td {
+      vertical-align: center;
+   }
+
+   .home_table {
+      border-spacing: 10px 10px;
+   }
+
+    /* responsive: small screens */
+   @media screen and (max-width: 750px) {
+    tbody { float: left; }
+    .home_table td,th { display: block }
+    .cv_inner_table td,th { display: block }
+    td.picture_me { text-align: center; padding-bottom: 30px; }
+    body {font-size: 16px}
+    .cv_table {
+      border-spacing: 10px 10px;
+   }
+    }
+
+
+   .container {
+      /*background-color: grey;*/
+      height: fit-content;
+      padding: 3%;
+      line-height: 150%;
+   }
+
+   .container:after {
+      clear: both;
+   }
+
+   .current_tab{
+      color: rgb(50, 50, 50)
+   }
+
+   .topics{
+      padding-left: 5%;
+   }
+
+/* list  */
+
+      ul.no_symbol {
+      list-style-type: none;
+   }
+   
+   ul.square {
+      list-style-type: '- ';
+   }
+
+      p + ul.no_symbol {
+    margin-top: -15px;
+}
+
+
+
+
+    </style>
+
+    <!--  for switching between the different pages  -->
+    <script>
+    function show(shown, hidden){
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+    }
+
+
+
+    </script>
+
+</head>
+
+<!------------------------------------------------------------------------->
+<body>
+
+<div id="Page1">
+    <div class="header">
+
+        <h1>Louisiane Lemaire</h1>
+        <table class="nav_table">
+            <td>
+                <div class="current_tab">Home</div>
+            </td>
+            <td><a class="nav" , href="#" onclick="return show('Page2','Page1');">Research</a></td>
+            <td><a class="nav" , href="#" onclick="return show('Page3','Page1');">CV</a></td>
+            <td><a class="nav" , href="#" onclick="return show('Page4','Page1');">Contact</a></td>
+        </table>
+
+    </div>
+
+    <div class="container">
+
+        <table class="home_table">
+            <tbody>
+            <tr>
+                <td class="picture_me"><img src="https://www-sop.inria.fr/members/Mathieu.Desroches/temp/me.jpg"
+                                           width="260px" height="260px" hspace="25px"></td>
+                <td >
+                    I am a third year <strong>PhD student in Applied Mathematics</strong> at the <a class="other_links"
+                                                                                                    href="https://www.inria.fr/en/centre-inria-sophia-antipolis-mediterranee"
+                                                                                                    target="_blank">Inria
+                    Sophia Antipolis - Méditerranée Research Centre</a> (France), in the <a class="other_links"
+                                                                                              href="https://team.inria.fr/mathneuro/"
+                                                                                              target="_blank">MathNeuro</a>
+                    team.
+                    </p>
+
+                    <p>
+                        My supervisors are <a class="other_links"
+                                              href="http://www-sop.inria.fr/members/Mathieu.Desroches/" target="_blank">Mathieu
+                        Desroches</a> and <a class="other_links"
+                                             href="https://math.unice.fr/laboratoire/fiche%26id%3D803.html" target="_blank">Martin
+                        Krupa</a>. We work in collaboration with <a class="other_links"
+                                                                    href="http://cvscience.aviesan.fr/cv/579/massimo-mantegazza"
+                                                                    target="_blank">Massimo Mantegazza</a> from the <a
+                            class="other_links" href="https://www.ipmc.cnrs.fr/cgi-bin/site.cgi?nompage=accueil&lang=en"
+                            target="_blank">Institute of Molecular and Cellular Pharmacology</a> (France).</p>
+
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+
+        <div class="topics">
+            <p><strong>Research interests</strong>:
+            <ul class="no_symbol">
+                <li>- Computational neuroscience</li>
+                <li>- Bifurcation theory</li>
+                <li>- Slow-fast dynamics</li>
+                <li>- Conductance-based models with dynamic ion concentrations</li>
+                <li>- Mutations of the Na<sub>V</sub>1.1 channel (hemiplegic migraine and epilepsy)</li>        
+                <li>- Depolarization block</li>              
+            </ul>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<div id="Page2" style="display:none">
+    <div class="header">
+
+        <h1>Louisiane Lemaire</h1>
+        <table class="nav_table">
+            <td><a class="nav" , href="#" onclick="return show('Page1','Page2');">Home</a></td>
+
+            <td>
+                <div class="current_tab">Research</div>
+            </td>
+
+            <td><a class="nav" , href="#" onclick="return show('Page3','Page2');">CV</a></td>
+            <td><a class="nav" , href="#" onclick="return show('Page4','Page2');">Contact</a></td>
+        </table>
+
+    </div>
+
+    <div class="container">
+
+        <p>
+            <a href="https://scholar.google.fr/citations?user=hc8oTTwAAAAJ&hl=en&oi=ao" target="_blank"> <img
+                    style="width: 25px; height: 25px;" alt="Google Scholar"
+                    src="https://www-sop.inria.fr/members/Mathieu.Desroches/temp/google-scholar.png"></a> <a
+                href="https://orcid.org/0000-0002-9260-2521" target="_blank"> <img
+                style="width: 25px; height: 25px;" alt="ORCID"
+                src="https://www-sop.inria.fr/members/Mathieu.Desroches/temp/ORCIDiD_icon128x128.png"></a> 
+        </p>
+
+        <h2>Publications</h2>
+        <ul class="square">
+            <li><p>
+            <u>L. Lemaire</u>, M. Desroches, M. Krupa and M. Mantegazza. Idealized multiple timescale
+model of CSD initiation and pre-epileptic hyperactivity, <em>in preparation</em>.
+        </p></li>
+            <li><p>
+            <u>L. Lemaire</u>, M. Desroches, M. Krupa, L. Pizzamiglio, P Scalmani and M. Mantegazza. <a
+                class="other_links"
+                href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009239"
+                target="_blank">Modeling
+            Na<sub>V</sub>1.1/<i>SCN1A</i> sodium channel mutations in a microcircuit with realistic ion concentration dynamics
+            suggests differential GABAergic mechanisms leading to hyperexcitability in epilepsy and hemiplegic migraine</a>, <em>PLOS Computational Biology</em> 17 (7), e1009239, 2021. Code: <a class="black_links" href="http://modeldb.yale.edu/267047" target="_blank"> http://modeldb.yale.edu/267047</a>
+        </p></li>
+            <li><p>
+            O. Chever, S. Zerimech, P. Scalmani, <u>L. Lemaire</u>, A. Loucif, M Ayrault, M. Krupa, M. Desroches, F.
+            Duprat,
+            S. Cestèle and M. Mantegazza. <a class="other_links"
+                                             href="https://www.jci.org/articles/view/142203"
+                                             target="_blank">Initiation of migraine-related cortical spreading depolarization by hyperactivity of GABAergic neurons and Na<sub>V</sub>1.1 channels</a>, <em>The Journal of Clinical Investigation</em> 131 (21), e142203, 2021. Code: <a class="black_links" href="http://modeldb.yale.edu/267157" target="_blank">http://modeldb.yale.edu/267157</a>
+        </p></li>
+            <li><p>
+            E. L. Carroll, R. Alderman, J. L. Bannister, M. Bérube, P. B. Best, L. Boren, C. S. Baker, C. Constantines,
+            K.
+            Findlay, R. Harcourt, <u>L. Lemaire</u>, P. J. Palsbøll, N. J. Patenaude, V. J. Rowntree, J. Seger, D.
+            Steel, L.
+            O. Valenzuela, M. Watson and O. E. Gaggiotti. <a class="other_links"
+                                                             href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6288115/"
+                                                             target="_blank">Incorporating non-equilibrium dynamics into
+            demographic history inferences of a migratory marine species, </a> <em>Heredity</em> 122 (1), pp. 53-68,
+            2019.
+        </p></li>
+            <li><p>
+            <u>L. Lemaire</u>, F. Jay, I. Lee, K. Csilléry and M. Blum. <a class="other_links"
+                                                                           href="https://arxiv.org/pdf/1601.04096.pdf"
+                                                                           target="_blank">Goodness-of-fit statistics
+            for approximate Bayesian computation</a>, <em>arXiv</em>, 2016.
+        </p></li>
+
+        </ul>
+        
+
+        
+
+        
+
+        
+
+        <h2>Talks</h2>
+
+        <p>
+        <ul class="no_symbol">
+            <li>- <a class="other_links" href="http://icsd2020.univ-lyon1.fr/en/pages/icsd-2021-home" target="_blank">International Conference on Spreading Depolarizations 2021</a></li>
+            <li>- <a class="other_links" href="https://www.danieleavitabile.com/icmns2021digital/" target="_blank">2021
+                International Conference on Mathematical Neuroscience</a>: <a href="https://www.youtube.com/watch?v=Db2Y68y4Prg" target="_blank"> <img
+                    style="width: 30px; vertical-align: text-bottom" alt="Youtube"
+                    src="https://www-sop.inria.fr/members/Mathieu.Desroches/temp/yt_icon_rgb.png"></a>
+            </li>
+            <li>- <a class="other_links" href="http://schedule.smb2021.org/NEUR/NEUR-MS01.html" target="_blank">Virtual
+                SMB
+                2021 Annual Meeting</a></li>
+            <li>- <a class="other_links" href="https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=71545"
+                     target="_blank">2021 SIAM Conference on Dynamical Systems</a></li>
+            <li>- <a class="other_links" href="https://www.danieleavitabile.com/ddd2020/" target="_blank">Dynamics Days
+                Digital 2020</a>: <a href="https://www.youtube.com/watch?v=G4nvSkxQYmQ" target="_blank"> <img
+                    style="width: 30px; vertical-align: text-bottom" alt="Youtube"
+                    src="https://www-sop.inria.fr/members/Mathieu.Desroches/temp/yt_icon_rgb.png"></a>
+            </li>
+
+        </ul>
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+<div id="Page3" style="display:none">
+    <div class="header">
+
+        <h1>Louisiane Lemaire</h1>
+        <table class="nav_table">
+            <td><a class="nav" , href="#" onclick="return show('Page1','Page3');">Home</a></td>
+            <td><a class="nav" , href="#" onclick="return show('Page2','Page3');">Research</a></td>
+            <td>
+                <div class="current_tab">CV</div>
+            </td>
+            <td><a class="nav" , href="#" onclick="return show('Page4','Page3');">Contact</a></td>
+        </table>
+
+    </div>
+
+    <div class="container">
+
+        <h2>Education</h2>
+
+        <table class="cv_table">
+            <tbody>
+            <tr>
+                <td class="year">Since 2018</td>
+                <td><strong>PhD in Applied Mathematics</strong></br>Inria Sophia Antipolis - Méditerranée
+                    Research
+                    Centre,
+                    France </br><strong>"Initiation of cortical spreading depolarization and pre-epileptic hyperactivity in a multiscale mathematical model of Na<sub>V</sub>1.1 mutations"</strong></br>
+                    Supervisors: <a class="other_links"
+                                    href="http://www-sop.inria.fr/members/Mathieu.Desroches/" target="_blank">Mathieu
+                        Desroches</a> and <a class="other_links"
+                                             href="https://math.unice.fr/laboratoire/fiche%26id%3D803.html"
+                                             target="_blank">Martin
+                        Krupa</a></td>
+            </tr>
+            <tr>
+                <td>2017-18</td>
+                <td><strong>MSc in Applied Mathematics</strong></br>Universitat Politècnica de Catalunya (UPC),
+                    Barcelona </br>Thesis: Mathematical modeling of metabolic symbiosis in tumour growth</br>
+                    Supervisor:
+                    <a class="other_links" href="https://sites.google.com/site/tomasalarc/home" target="_blank">Tomás
+                        Alarcón</a></td>
+            </tr>
+            <tr>
+                <td>2016-17</td>
+                <td>
+                    <strong>M1 (first year of master) in Applied Mathematics and Statistics</strong></br>
+                    Université Claude Bernard Lyon 1  </br>
+                </td>
+            </tr>
+            <tr>
+                <td>2013-16</td>
+                <td>
+                    <strong>BSc in Biology</strong> </br>
+                    Université Pierre-et-Marie-Curie (UPMC, Paris 6) </br>
+
+                    <table class="cv_inner_table">
+                        <tbody>
+                        <tr>
+                            <td class="year">2016</td>
+                            <td>Internship: Kalman filter for the tracking of bacterial motion</br>
+                                Technische Universität Darmstadt, Germany </br>
+                                Supervisor: <a class="other_links"
+                                               href="https://www.bcs.tu-darmstadt.de/bcs_team/koepplheinz.en.jsp"
+                                               target="_blank">Heinz Köppl</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2015-16</td>
+                            <td> Exchange year at the University of British Columbia (UBC), Vancouver</td>
+                        </tr>
+
+                        <tr>
+                            <td>2015</td>
+                            <td> Internship: Bayesian analysis for the demographic history of right whales</br>
+                                University of St Andrews, Scotland </br>
+                                Supervisor: <a class="other_links"
+                                               href="https://risweb.st-andrews.ac.uk/portal/en/persons/oscar-eduardo-gaggiotti(43985656-390b-478e-b9a7-05fe88181e46).html"
+                                               target="_blank">Oscar
+                                    Gaggiotti</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2014</td>
+                            <td>Internship: Goodness-of-fit algorithm for the
+                                R package <a class="other_links"
+                                             href="https://cran.r-project.org/web/packages/abc/"
+                                             target="_blank">Tools for Approximate Bayesian Computation</a></br>
+                                Université Grenoble-Alpes, France </br>
+                                Supervisor: <a class="other_links"
+                                               href="http://membres-timc.imag.fr/Michael.Blum/index.html"
+                                               target="_blank">Michael
+                                    Blum</a>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <h2>Event organisation</h2>
+
+        <table class="cv_small_table">
+            <tbody>
+            <tr>
+                <td>2021</td>
+                <td>
+                    <a class="other_links" href="https://phd-seminars-sam.inria.fr/momi2021/" target="_blank">MOMI
+                        workshop on
+                        industrial and applied mathematics</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>
+                    Member of the <a class="other_links" href="https://phd-seminars-sam.inria.fr/momi2021/" target="_blank">Inria Sophia Antipolis PhD Seminars</a> organizing committee
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <h2>Teaching</h2>
+
+        <table class="cv_small_table">
+            <tbody>
+            <tr>
+                <td>2021</td>
+                <td>
+                    Master course "Mathematical and computational models in neuroscience", 6h</br>
+                    Sorbonne Université - Campus Pierre-et-Marie-Curie (Paris)
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<div id="Page4" style="display:none">
+    <div class="header">
+
+        <h1>Louisiane Lemaire</h1>
+        <table class="nav_table">
+            <td><a class="nav" , href="#" onclick="return show('Page1','Page4');">Home</a></td>
+            <td><a class="nav" , href="#" onclick="return show('Page2','Page4');">Research</a></td>
+            <td><a class="nav" , href="#" onclick="return show('Page3','Page4');">CV</a></td>
+            <td>
+                <div class="current_tab">Contact</div>
+            </td>
+        </table>
+
+    </div>
+
+    <div class="container">
+
+        <p>
+            <a class="other_links"
+               href="mailto:louisiane.lemaire@inria.fr">louisiane.lemaire@inria.fr</a>
+        </p>
+
+        <p>
+            Inria Sophia Antipolis - Méditerranée Research Centre<br>
+            2004 route des Lucioles - BP 93<br>
+            06902 Sophia Antipolis Cedex
+            France
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
